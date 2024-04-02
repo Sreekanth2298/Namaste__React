@@ -1,0 +1,17 @@
+// Creating basic hello world using normal html and later will implement the same using vanilla java script
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+  //created a basic div element to start with assigning root as an id attribute
+<div id="root">
+    <h1>Hello .. Namaste React...!</h1>
+</div>
+</body>
+</html>
