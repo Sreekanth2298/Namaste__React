@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    
+</head>
+<body>
+<div id="root">
+    <!-- <h1>Hello .. Namaste React...!</h1> -->
+</div>
+  //included script tag to create a new h1 element and insert it inside root element
+<script>
+  //creating an h1 tag using inbuilt methods of document
+    const heading = document.createElement("h1");
+    heading.innerHTML="Hello World through Java script...!"
+      //getting the parent element where we need to place the newly created element
+    const root = document.getElementById("root");
+      //this will attach the newly created element to its parent ( root ==> parent , heading ==> child  )
+    root.appendChild(heading)
+</script>
+</body>
+</html>
