@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    
+</head>
+<body>
+<div id="root">
+    <!-- <h1>Hello .. Namaste React...!</h1> -->
+</div>
+
+<!-- The below links provide the features of react and react dom objects -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- <script>
+
+    // 1.React.createElement ==> return an react object 
+    // 2.createElement accepts 3 parameters.They are 
+    //                                         a. element name or typeof
+    //                                         b. attributes specific to the creating element
+    //                                         c. content that needs to be implemented inside the newly created element
+    const heading = React.createElement("h1",{id:"primary_heading"},"Hello World using react javascript..! Hurrrray...!");
+    //Identify the root element to start rendering
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading)
+</script> -->
+<!-- <script>
+    const heading = document.createElement("h1");
+    heading.innerHTML="Hello World through Java script...!"
+    const root = document.getElementById("root");
+    root.appendChild(heading)
+</script> -->
+<!-- <div id="parent">
+    <div id="child1">
+        <h1>I'm an h1 tag</h1>
+        <h2>I'm an h2 tag</h2>
+    </div>
+    <div id="child2">
+        <h1>I'm an h1 tag</h1>
+        <h2>I'm an h2 tag</h2>
+    </div>
+</div> -->
+<script>
+    //to eliminate the redablity issue react js came up with JSX ==> javascript XML
+const content = React.createElement("div",{id:"parent"},[React.createElement("div",{id:"child1"},[React.createElement("h1",{},"I'm an h1 tag"),React.createElement("h2",{},"I'm an h2 tag")]),React.createElement("div",{id:"child2"},[React.createElement("h1",{},"I'm an h1 tag"),React.createElement("h2",{},"I'm an h2 tag")])])
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(content)
+</script>
+</body>
+</html>
